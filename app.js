@@ -31,9 +31,11 @@ if ('development' == app.get('env')) {
 }
 
 //映射请求
+app.get("/login",routes.login);
 app.get("/main",routes.main);
 app.get("/people",routes.people);
 app.get("/menus",routes.menus);
+app.get("/statischart",routes.statischart);
 
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));

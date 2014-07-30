@@ -1,0 +1,59 @@
+<% include ../basechips/header.ejs %>
+<% include ../basechips/banner.ejs %>
+<% include ../chiptools/headermenu.ejs %>
+<style type="text/css">
+	.main{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.login-top img{
+		display: block;
+		margin: 0 auto;
+	}
+	.login-form p,.login-btn p{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.login-name,.login-passwrod,.login-button{
+		width: 100%;
+		height: 24px;
+		margin-top: 10px;
+	}
+	.login-name,.login-passwrod{
+		border: 2px solid #dce4ec;
+		color: #34495e;
+		font-family: "Lato", sans-serif;
+		font-size: 14px;
+		padding: 8px 0 9px 0px;
+		text-indent: 1px;
+	}
+	.login-button{
+		height: 50px;
+		background: -webkit-linear-gradient(top, #00c9fe, #008db2);
+		border: 1px solid #00c9fe;
+		border-radius: 20px;
+		font-size: 1.5em;
+		font-weight: bold;
+		color: white;
+		word-spacing: 20px;
+	}
+</style>
+<div class="main">
+	<div class="login-top">
+		<img src="./images/icons/people.png" alt="">
+	</div>
+	<div class="login-info">
+		<form action="login_submit" class="login-form" method="get" accept-charset="utf-8">
+			<p><input type="text" class="login-name" name="" value="" placeholder="请输入用户名"></p>
+			<p><input type="password" class="login-passwrod" name="" value="" placeholder="请输入密码"></p>
+			<p>Forget your Password?</p>
+		</form>
+	</div>
+	<div class="login-btn">
+		<p>
+			<input type="button" class="login-button" name="" value="Log In">
+		</p>
+	</div>
+	<div class="login-bottom"></div>
+</div>
+<% include ../basechips/footer.ejs %>
