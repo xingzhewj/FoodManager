@@ -6,13 +6,41 @@
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
+	.login-top{
+		display: table-cell;
+		height: 100px;
+		vertical-align: middle;
+		width: 410px;
+	}
 	.login-top img{
 		display: block;
 		margin: 0 auto;
 	}
+	.login-form{
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.login-btn{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 	.login-form p,.login-btn p{
 		width: 90%;
 		margin: 0 auto;
+	}
+	.login-name-icon,.login-password-icon{
+		display: block;
+		height: 24px;
+		width: 24px;
+		float: right;
+		position: relative;
+		top: -30px;
+	}
+	.login-name-icon{
+		background: url(./images/glyphicons-halflings.png) no-repeat -168px 0;
+	}
+	.login-password-icon{
+		background: url(./images/glyphicons-halflings.png) no-repeat -288px -24px;
 	}
 	.login-name,.login-passwrod,.login-button{
 		width: 100%;
@@ -37,6 +65,37 @@
 		color: white;
 		word-spacing: 20px;
 	}
+	.login-onoffp{
+		line-height: 40px;
+	}
+	.login-check{
+		display: none;
+	}
+	.login-switch{
+		width: 50px;
+		height: 20px;
+		border-radius: 20px;
+		position: relative;
+		float: right;
+		margin-top: 10px;
+		background-color: rgb(93, 213, 230);
+	}
+	.login-check:checked+.login-switch{
+		background-color: yellow;
+	}
+	.login-check:checked+.login-switch:before{
+		background-color: green;
+		left: 30px;
+	}
+	.login-switch:before{
+		content: "";
+		border-radius: 100%;
+		background-color: rgb(123, 204, 92);
+		height: 20px;
+		position: absolute;
+		width: 20px;
+		-webkit-transition:background .150s linear;;
+	}
 </style>
 <div class="main">
 	<div class="login-top">
@@ -44,9 +103,19 @@
 	</div>
 	<div class="login-info">
 		<form action="login_submit" class="login-form" method="get" accept-charset="utf-8">
-			<p><input type="text" class="login-name" name="" value="" placeholder="请输入用户名"></p>
-			<p><input type="password" class="login-passwrod" name="" value="" placeholder="请输入密码"></p>
-			<p>Forget your Password?</p>
+			<p>
+				<input type="text" class="login-name" name="" value="" placeholder="请输入用户名">
+				<label class="login-name-icon"></label>
+			</p>
+			<p>
+				<input type="password" class="login-passwrod" name="" value="" placeholder="请输入密码">
+				<label class="login-password-icon"></label>
+			</p>
+			<p class="login-onoffp">
+				<span>Forget your Password?</span>
+				<input type="checkbox" class="login-check" id="on-off" name="" value="">
+				<label for="on-off" class="login-switch"></label>
+			</p>
 		</form>
 	</div>
 	<div class="login-btn">

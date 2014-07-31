@@ -18,3 +18,6 @@ exports.menus = function(req,res){
 exports.statischart = function(req,res){
 	res.render("basehtml/statischart",{"title":"统计表"});
 }
+exports.peopleinfo = function(req,res){
+	res.render("basehtml/peopleinfo",{"title":"人员信息"});
+}
