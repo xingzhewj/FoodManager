@@ -21,3 +21,6 @@ exports.statischart = function(req,res){
 exports.peopleinfo = function(req,res){
 	res.render("basehtml/peopleinfo",{"title":"人员信息"});
 }
+exports.infolist = function(req,res){
+	res.render("basechips/msglist",{"title":"列表信息"});
+}

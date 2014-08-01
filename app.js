@@ -37,6 +37,7 @@ app.get("/people",routes.people);
 app.get("/menus",routes.menus);
 app.get("/statischart",routes.statischart);
 app.get("/peopleinfo",routes.peopleinfo);
+app.get("/infolist",routes.infolist);
 
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
