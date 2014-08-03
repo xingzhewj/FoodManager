@@ -7,7 +7,7 @@
 	}
 	.menus{
 		width: 90%;
-		height: 350px;
+		height: 320px;
 		margin: 0 auto;
 		margin-top: 20px;
 	}
@@ -62,8 +62,27 @@
 		background-color: rgb(173, 233, 197);
 		border-radius: 10px;
 	}
+	.menu-btn{
+		height: 40px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.menu-btn button{
+		border: 0px;
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		background: -webkit-linear-gradient(top,rgb(102, 204, 163),rgb(4, 120, 165));
+		-webkit-box-shadow: 2px 2px 30px 2px rgb(158, 201, 170) inset;
+		height: 35px;
+		border-radius: 5px;
+		color: white;
+		letter-spacing: 20px;
+		font-size: 1.3em;
+	}
 </style>
 <div class="main">
+	<% include ../chiptools/navigation.ejs %>
 	<div class="menus">
 		<ul class="menu-items">
 			<li class="menu-item">
@@ -124,6 +143,9 @@
 			<li class="menu-nm">食物4</li>
 			<li class="menu-nm">食物5</li>
 		</ul>
+	</div>
+	<div class="menu-btn">
+		<button>确认</button>
 	</div>
 </div>
 <% include ../basechips/footer.ejs %>

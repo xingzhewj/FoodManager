@@ -1,0 +1,77 @@
+<% include ../basechips/header.ejs %>
+<% include ../basechips/banner.ejs %>
+<% include ../chiptools/headermenu.ejs %>
+<style>
+	label,input{
+		display: block;
+		font-weight: normal;
+		line-height: 24px;
+	}
+	.main{
+		background-color: rgb(241,241,241);
+		padding-bottom: 20px;
+	}
+	.regedit-title{
+		text-align: center;
+	}
+	.regedit-title h3{
+		line-height: 55px;
+		color:#555;
+	}
+	.regedit-title h3:before{
+		content: ".";
+		display: inline-block;
+		height: 24px;
+		width: 24px;
+		background: url(./images/glyphicons-halflings.png) no-repeat 0 -65px;
+		color:rgb(241,241,241);
+		position: relative;
+		top: 14px;
+	}
+	.regedit-title span{
+		color:red;
+	}
+	.regedit-body label{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 23px;
+	}
+	.regedit-body input{
+		width: 80%;
+		margin: 0 auto;
+		padding: 5px 10px 5px 10px;
+	}
+	.regedit-btn button{
+		display: block;
+		width: 85%;
+		height: 40px;
+		border:0px;
+		background: -webkit-linear-gradient(top,rgb(185, 193, 252),rgb(75, 208, 233));
+		-webkit-box-shadow: 0 15px 30px 0 rgb(93, 167, 118) inset;
+		margin: 0px auto;
+		color:white;
+		font-size: 1.3em;
+		letter-spacing: 10px;
+		margin-top: 20px;
+	}
+</style>
+<div class="main">
+	<% include ../chiptools/navigation.ejs %>
+	<div class="regedit-title">
+		<h3>REGEDITED TO <span>WEBSITE</span></h3>
+	</div>
+	<div class="regedit-body">
+		<label for="regeditname" class="regedit-name-tit">USER NAME</label>
+		<input id="regeditname" class="regedit-name-con" type="text" name="" value="" placeholder="请输入用户名">
+		<label for="regeitmail">USER E-MAIL</label>
+		<input id="regeditmail" type="text" name="" value="" placeholder="请输入邮箱">
+		<label for="regeidtpassword">USER PASSWORD</label>
+		<input id="regeditpassword" type="password" name="" value="" placeholder="请输入密码">
+		<label for="regeidtpassword1">CONFIRM PASSWORD</label>
+		<input id="regeditpassword1" type="password" name="" value="" placeholder="请再次输入密码">
+	</div>
+	<div class="regedit-btn">
+		<button >确认</button>
+	</div>
+</div>
+<% include ../basechips/footer.ejs %>

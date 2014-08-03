@@ -1,0 +1,146 @@
+<% include ../basechips/header.ejs %>
+<% include ../basechips/banner.ejs %>
+<% include ../chiptools/headermenu.ejs %>
+<style type="text/css">
+	.main{
+		background-color: rgb(243,243,243);
+		margin-bottom: 20px;
+	}
+	.recharge-title{
+		background-color: rgb(243,123,30);
+	}
+	.recharge-title h3{
+		text-align: center;
+		line-height: 50px;
+		letter-spacing: 5px;
+		font-size: 1.4em;
+		color:white;
+	}
+	.recharge-item input[type="radio"]{
+		display: none;
+	}
+	.recharge-items{
+		list-style: none;	
+		padding-bottom: 10px;
+	}
+	.recharge-item{
+		display: inline-block;
+		width: 30%;
+		margin-left: 1.6%;
+		margin-top: 10px;
+	}
+	.recharge-item label{
+		display: inline-block;
+		width: 100%;
+		line-height: 40px;
+		text-align: center;
+		background-color: white;
+		border:1px solid rgb(201, 197, 197);
+		border-radius: 10px;
+		padding: 1px;
+	}
+	.recharge-item1:checked+.recharge-item1-btn{
+		background-color: rgb(235, 125, 39);
+	}
+	.recharge-item2:checked+.recharge-item2-btn{
+		background-color: rgb(235, 125, 39);
+	}
+	.recharge-item3:checked+.recharge-item3-btn{
+		background-color: rgb(235, 125, 39);
+	}
+	.recharge-item4:checked+.recharge-item4-btn{
+		background-color: rgb(235, 125, 39);
+	}
+	.recharge-item5:checked+.recharge-item5-btn{
+		background-color: rgb(235, 125, 39);
+	}
+	.recharge-item6:checked+.recharge-item6-btn{
+		background-color: rgb(235, 125, 39);
+	}
+	.recharge-items:last-child:after{
+		height:0;   
+		content:".";   
+		clear:both;   
+		display:block;   
+		visibility:hidden;   
+	}
+	.recharge-input{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.recharge-input>input[type="text"]{
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		padding: 5px;
+		height: 30px;
+		border-radius: 10px;
+		border:1px solid #cccccc;;
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		transition: border linear .2s, box-shadow linear .2s;
+	}
+	.recharge-btn{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.recharge-btn button{
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		height: 40px;
+		background: -webkit-linear-gradient(top, #fba42e, #d87e04);
+		border:0px;
+	}
+	.recharge-des p{
+		line-height: 48px;
+		text-align: center;
+	}
+</style>
+<div class="main">
+	<% include ../chiptools/navigation.ejs %>
+	<div class="recharge-title">
+		<h3>充值信息</h3>
+	</div>
+	<div class="recharge-body">
+		<div class="recharge-form">
+			<div class="recharge-input">
+				<input type="text" name="" value="" placeholder="请输入金额">
+			</div>
+			<div>
+				<ul class="recharge-items">
+					<li class="recharge-item">
+						<input type="radio" id="rechargeitem1" class="recharge-item1" name="items" value="">
+						<label for="rechargeitem1" class="recharge-item1-btn">￥100</label>
+					</li>
+					<li class="recharge-item">
+						<input type="radio" id="rechargeitem2" class="recharge-item2" name="items" value="">
+						<label for="rechargeitem2" class="recharge-item2-btn">￥100</label>
+					</li>
+					<li class="recharge-item">
+						<input type="radio" id="rechargeitem3" class="recharge-item3" name="items" value="">
+						<label for="rechargeitem3" class="recharge-item3-btn">￥100</label>
+					</li>
+					<li class="recharge-item">
+						<input type="radio" id="rechargeitem4" class="recharge-item4" name="items" value="">
+						<label for="rechargeitem4" class="recharge-item4-btn">￥100</label>
+					</li>
+					<li class="recharge-item">
+						<input type="radio" id="rechargeitem5" class="recharge-item5" name="items" value="">
+						<label for="rechargeitem5" class="recharge-item5-btn">￥100</label>
+					</li>
+					<li class="recharge-item">
+						<input type="radio" id="rechargeitem6" class="recharge-item6" name="items" value="">
+						<label for="rechargeitem6" class="recharge-item6-btn">￥100</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="recharge-des">
+			<p>无优惠价格</p>
+		</div>
+		<div class="recharge-btn">
+			<button>充值</button>
+		</div>
+	</div>
+</div>
+<% include ../basechips/footer.ejs %>
