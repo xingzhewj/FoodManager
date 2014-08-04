@@ -40,6 +40,8 @@ app.get("/peopleinfo",routes.peopleinfo);
 app.get("/recharge",routes.recharge);
 app.get("/regedit",routes.regedit);
 
+app.get("/node",routes.node);
+
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
 });

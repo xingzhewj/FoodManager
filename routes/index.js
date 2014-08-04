@@ -112,3 +112,17 @@ exports.regedit = function(req, res) {
     });
 }
 
+/********************笔记***********************/
+exports.node = function(req,res){
+    res.render("basehtml/note/note",{
+        "title":"笔记主页",
+        "navlist": [{
+            "title": "个人网站",
+            "url": "./main"
+        }, {
+            "title": "日记管理",
+            "url": "./node"
+        }]
+    });
+}
+
