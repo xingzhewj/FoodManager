@@ -21,12 +21,34 @@
 		top:-20px;
 		position: relative;
 	}
+	.note-item:nth-child(odd){
+		background-color: rgb(187, 209, 255);
+	}
+	.note-item:nth-child(even){
+		background-color: rgb(214, 229, 252);
+		color:red;
+	}
+	.note-item{
+		display: list-item;
+		line-height: 40px;
+	}
+	.note-item a{
+		position: relative;
+		left: 20px;
+		text-decoration: none;
+		color: rgb(43, 112, 71);
+		letter-spacing: 3px;
+	}
 	.note-icon-write{
 		display: inline-block;
-		background: url(../../images/glyphicons-halflings.png) no-repeat 0 -48px;
+		background: url(../../images/glyphicons-halflings.png) no-repeat 6px -66px;
 		width: 24px;
 		height: 24px;
-		float: right;
+		position: relative;
+		left: 70%;
+		background-color: rgb(164, 209, 211);
+		border-radius: 24px;
+		top: 5px;
 	}
 </style>
 <div class="main">
