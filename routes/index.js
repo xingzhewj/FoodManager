@@ -126,3 +126,19 @@ exports.node = function(req,res){
     });
 }
 
+exports.writenote = function(req,res){
+    res.render("basehtml/note/writeNote",{
+        "title":"写笔记",
+        "navlist": [{
+            "title": "个人网站",
+            "url": "./main"
+        }, {
+            "title": "日记管理",
+            "url": "./node"
+        }, {
+            "title": "写笔记",
+            "url": "./node/writenote"
+        }]
+    });
+}
+

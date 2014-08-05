@@ -1,0 +1,69 @@
+<% include ../../basechips/header.ejs %>
+<% include ../../basechips/banner.ejs %>
+<% include ../../chiptools/headermenu.ejs %>
+<% include ../../chiptools/navigation.ejs %>
+<style type="text/css">
+	.note-header{
+		background: rgb(158, 158, 235);
+	}
+	.note-date{
+		display: inline-block;
+		height: 24px;
+		width: 24px;
+		background: url(../../../images/icons/glyphicons-halflings.png) no-repeat -66px -138px;
+		float: right;
+		margin-right: 10px;
+	}
+	.note-weather{
+		display: inline-block;
+		height: 24px;
+		width: 24px;
+		background: url(../../../images/icons/glyphicons-halflings.png) no-repeat -186px -114px;
+		float: right;
+		margin-right: 10px;
+	}
+	.note-header-btn:last-child:after{
+		content:".";
+		display: block;
+		height: 1px;
+		width: 1px;
+		clear: both;
+	}
+	.note-body-title p{
+		padding-left: 20px;
+	}
+	.note-body-title input{
+		padding: 5px 10px;
+		border: 1px solid black;
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+	}
+	.note-body-content textarea{
+		height: 200px;
+		width: 80%;
+		display: block;
+		margin: 0px;
+		margin: 0 auto;
+
+	}
+</style>
+<div class="main">
+	<div class="note-header">
+		<div class="note-header-btn">
+			<i class="note-date"></i>
+			<i class="note-weather"></i>
+		</div>
+	</div>
+	<div class="note-body">
+		<div class="note-body-title">
+			<p>笔记标题</p>
+			<input type="text" name="" value="" placeholder="请输入笔记标题">
+		</div>
+		<div class="note-body-content">
+			<textarea></textarea>
+		</div>
+	</div>
+	<div class="note-btn"></div>
+</div>
+<% include ../../basechips/footer.ejs %>

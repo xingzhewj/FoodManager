@@ -41,6 +41,7 @@ app.get("/recharge",routes.recharge);
 app.get("/regedit",routes.regedit);
 
 app.get("/note",routes.node);
+app.get("/note/write",routes.writenote);
 
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
