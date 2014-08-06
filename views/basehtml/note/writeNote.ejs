@@ -3,6 +3,9 @@
 <% include ../../chiptools/headermenu.ejs %>
 <% include ../../chiptools/navigation.ejs %>
 <style type="text/css">
+	.main{
+		background-color: rgb(240, 240, 240);
+	}
 	.note-header{
 		background: rgb(158, 158, 235);
 	}
@@ -23,14 +26,15 @@
 		margin-right: 10px;
 	}
 	.note-header-btn:last-child:after{
-		content:".";
+		content:" ";
 		display: block;
 		height: 1px;
 		width: 1px;
 		clear: both;
 	}
-	.note-body-title p{
-		padding-left: 20px;
+	.note-body-title p,.note-body-content p{
+		padding-left: 25px;
+		line-height: 40px;
 	}
 	.note-body-title input{
 		padding: 5px 10px;
@@ -39,13 +43,16 @@
 		display: block;
 		margin: 0 auto;
 	}
+	.note-body-content{
+		padding-bottom: 10px;
+	}
 	.note-body-content textarea{
 		height: 200px;
 		width: 80%;
 		display: block;
-		margin: 0px;
-		margin: 0 auto;
-
+		margin: 0px auto;
+		padding: 5px 10px;
+		border: 1px solid rgb(87, 87, 87);
 	}
 </style>
 <div class="main">
@@ -61,6 +68,7 @@
 			<input type="text" name="" value="" placeholder="请输入笔记标题">
 		</div>
 		<div class="note-body-content">
+			<p>笔记内容</p>
 			<textarea></textarea>
 		</div>
 	</div>

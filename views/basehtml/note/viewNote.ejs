@@ -1,0 +1,48 @@
+<% include ../../basechips/header.ejs %>
+<% include ../../basechips/banner.ejs %>
+<% include ../../chiptools/headermenu.ejs %>
+<% include ../../chiptools/navigation.ejs %>
+<style type="text/css">
+	.main{
+		background-color: rgb(241,241,241);
+	}
+	.noteview-top{
+		background: -webkit-linear-gradient(top,#9AAF9E,#BAD1B2);
+	}
+	.noteview-top h3{
+		line-height: 40px;
+		padding-left: 20px;
+	}
+	.noteview-body p{
+		padding: 0px 20px 10px 20px;
+	}
+	.noteview-body{
+		padding: 10px 0px 10px 0px;
+	}
+	.noteview-body:after{
+		content: " ";
+		clear: both;
+		display: block;
+	}
+	.noteview-body span:nth-child(2){
+		float: left;
+		position: relative;
+		left: 10%;
+	}
+	.noteview-body span:nth-child(3){
+		float: left;
+		position: relative;
+		left: 45%;
+	}
+</style>
+<div class="main">
+	<div class="noteview-top">
+		<h3>日志标题</h3>
+	</div>
+	<div class="noteview-body">
+		<p>日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容日志内容</p>
+		<span>晴天</span><span>2014-12-03</span>
+	</div>
+	<div class="noteview-bottom"></div>
+</div>
+<% include ../../basechips/footer.ejs %>
