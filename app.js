@@ -44,6 +44,8 @@ app.get("/note",routes.node);
 app.get("/note/write",routes.writenote);
 app.get("/note/view",routes.viewnote);
 
+app.get("/blog",routes.blog);
+
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
 });

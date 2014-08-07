@@ -157,3 +157,17 @@ exports.viewnote = function(req,res){
         }]
     });
 }
+
+/***********博客****************/
+exports.blog = function(req,res){
+    res.render("basehtml/blog/blog",{
+        "title":"博客主页",
+        "navlist":[{
+            "title": "个人网站",
+            "url": "./main"
+        },{
+            "title":"个人博客",
+            "url":"./blog"
+        }]
+    });
+}
