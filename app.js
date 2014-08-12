@@ -46,6 +46,8 @@ app.get("/note/view",routes.viewnote);
 
 app.get("/blog",routes.blog);
 
+app.get("/chat",routes.chat);
+
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
 });

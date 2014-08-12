@@ -171,3 +171,17 @@ exports.blog = function(req,res){
         }]
     });
 }
+
+/************聊天***************/
+exports.chat = function(req,res){
+    res.render("basehtml/chat/chat",{
+        "title":"聊天主页",
+        "navlist":[{
+            "title": "个人网站",
+            "url": "./main"
+        },{
+            "title":"聊天主页",
+            "url":"./chat"
+        }]
+    });
+}

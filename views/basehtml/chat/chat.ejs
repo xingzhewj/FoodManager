@@ -1,0 +1,89 @@
+<% include ../../basechips/header.ejs %>
+<% include ../../basechips/banner.ejs %>
+<% include ../../chiptools/headermenu.ejs %>
+<% include ../../chiptools/navigation.ejs %>
+<style type="text/css">
+	.main{
+		height: 350px;
+	}
+	.chat-top{
+		height: 200px;
+		padding-bottom: 10px;
+	}
+	.chat-people{
+		background-color: green;
+	}
+	.chat-people span{
+		line-height: 40px;
+		margin-left: 20px;
+	}
+	.chat-history{
+		display: block;
+		width: 90%;
+		height: 150px;
+		margin: 10px auto;
+	}
+	.chat-history textarea{
+		width: 100%;
+		height: 145px;
+	}
+	.chat-bottom{
+		height: 90px;
+	}
+	.chat-attach{
+		height: 30px;
+		width: 90%;
+		border: 1px solid #555;
+		background-color: #555;
+		margin: 0 auto;
+	}
+	.chat-content{
+		width: 90%;
+		margin: 10px auto;
+	}
+	.chat-content textarea{
+		width: 100%;
+		height: 100%;
+	}
+	.chat-btn{
+		height: 30px;
+		width: 90%;
+		margin: 10px auto;
+	}
+	.chat-btn button{
+		height: 40px;
+		width: 100%;
+		background: -webkit-linear-gradient(top,rgb(122, 201, 238),rgb(57, 132, 151));
+	}
+	.chat-icon{
+		display: inline-block;
+		height: 24px;
+		width: 24px;
+		background: url(../../images/glyphicons-halflings.png) no-repeat -114px -114px;
+		margin-top: 3px;
+		margin-left: 10px;
+	}
+</style>
+<div class="main">
+	<div class="chat-top">
+		<div class="chat-people">
+			<span>聊天人</span>
+		</div>
+		<div class="chat-history">
+			<textarea></textarea>
+		</div>
+	</div>
+	<div class="chat-bottom">
+		<div class="chat-attach">
+			<i class="chat-icon"></i>
+			<i></i>
+		</div>
+		<div class="chat-content">
+			<textarea></textarea>
+		</div>
+		<div class="chat-btn">
+			<button>确认</button>
+		</div>
+	</div>
+</div>
+<% include ../../basechips/footer.ejs %>
