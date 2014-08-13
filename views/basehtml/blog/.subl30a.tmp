@@ -4,7 +4,7 @@
 <% include ../../chiptools/navigation.ejs %>
 <style type="text/css">
 	.main{
-		height: auto;
+		height: 300px;
 	}
 	.m-blog-write{
 		width: 90%;
@@ -47,13 +47,6 @@
 		width: 24px;
 		background: url(../../images/glyphicons-halflings.png) no-repeat -90px 6px;
 	}
-	.blog-list-contain{
-		width: 90%;
-		margin: 10px auto;
-	}
-	.blog-list-item{
-		list-style: none;
-	}
 	.blog-item-user{
 		margin-top:10px;
 	}
@@ -64,23 +57,11 @@
 	.blog-item-user img{
 		float: left;
 		height: 40px;
-		margin-left: 10px;
-	}
-	.blog-item-user:after{
-		content:" ";
-		display: block;
-		height: 1px;
-		clear: both;
+		margin-left: 20px;
 	}
 	.blog-item-user span{
 		display: block;
 		margin-left: 80px;
-	}
-	.blog-item-content-title{
-		color: green;
-	}
-	.m-blog-btn-send button{
-		letter-spacing: 10px;
 	}
 </style>
 <div class="main">
@@ -102,37 +83,16 @@
 		<ul class="blog-list-items">
 			<li class="blog-list-item">
 				<div class="blog-item-user">
-					<img src="../../images/icons/people/creative8.png">
+					<img src="../../images/">
 					<span>王某某</span>
 					<span>2012-04-23</span>
 				</div>
 				<div class="blog-item-content">
-					<p class="blog-item-content-title">标题</p>
-					<p>微博内容微博内容微博内容微博内容微博内容微博内容微博内容微博内容微博内容微博内容微博内容</p>
+					
 				</div>
 			</li>
-			<li class="blog-list-item">
-				<div class="blog-item-user">
-					<img src="../../images/icons/people/creative8.png">
-					<span>王某某</span>
-					<span>2012-04-23</span>
-				</div>
-				<div class="blog-item-content">
-					<p class="blog-item-content-title">标题</p>
-					<p>微博内容微博内容微博内容微博内容微博内容微博内容微博内容微博内容微博内容微博内容微博内容</p>
-				</div>
-			</li>
-			<li class="blog-list-item">
-				<div class="blog-item-user">
-					<img src="../../images/icons/people/creative8.png">
-					<span>王某某</span>
-					<span>2012-04-23</span>
-				</div>
-				<div class="blog-item-content">
-					<p class="blog-item-content-title">标题</p>
-					<p>微博内容微博内容微博内容微博内容微博内容微博内容微博内容微博内容微博内容微博内容微博内容</p>
-				</div>
-			</li>
+			<li class="blog-list-item"></li>
+			<li class="blog-list-item"></li>
 			<li class="blog-list-item"></li>
 			<li class="blog-list-item"></li>
 			<li class="blog-list-item"></li>
