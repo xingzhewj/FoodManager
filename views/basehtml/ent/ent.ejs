@@ -1,0 +1,87 @@
+<% include ../../basechips/header.ejs %>
+<% include ../../basechips/banner.ejs %>
+<% include ../../chiptools/headermenu.ejs %>
+<% include ../../chiptools/navigation.ejs %>
+<style type="text/css">
+	.ent-content{
+		background-color: #f5f5f5;
+	}
+	.ent-serach-wrap{
+		height: 40px;
+		width: 250px;
+		margin: 0 auto;
+		border: 1px solid rgb(146, 191, 233);
+		position: relative;
+		border: 1px solid #e91f15;
+	}
+	.ent-serach-wrap input{
+		height: 100%;
+		width: 100%;
+		padding: 0px;
+		display: block;
+		border: 0px;
+		position: absolute;
+		left: 0px;
+	}
+	.ent-serach-wrap button{
+		cursor: pointer;
+		display: block;
+		width: 40px;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		top:0;
+		text-indent: -9999px;
+		overflow: hidden;
+		border: 0;
+		border-left: 1px solid #e91f15;
+		background-color: red;
+		background-image: url(http://s2.apptuan.bdimg.com/static/mobile/list/home/img/icon-search_e826fa96.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 17px 17px;
+	}
+	.ent-category ul li{
+		float: left;
+		width: 33%;
+		list-style: none;
+	}
+	.c-ent-category-film a{
+		text-decoration: none;
+		display: block;
+		margin: 10px auto 10px;
+		width: 50px;
+		font-size: 14px;
+		color:#4c4c4c;
+	}
+</style>
+<article>
+	<section class="ent-content">
+		<section class="ent-search-bar">
+			<form class="j-search-form">
+				<div class="ent-serach-wrap">
+					<input type="text" class="j-ent-seach-input" autocomplete="off">
+					<i id="j-clear-input"></i>
+					<button type="submit" class="j-ent-search-submit">搜索</button>
+				</div>
+			</form>
+		</section>
+		<section class="ent-category">
+			<ul>
+				<li class="c-ent-category-film">
+					<a href="#">待定</a>
+				</li>
+				<li class="c-ent-category-item">
+					<a href="#">待定</a>
+				</li>
+				<li class="c-ent-category-item">
+					<a href="#">待定</a>
+				</li>
+				<li class="c-ent-category-item">
+					<a href="#">待定</a>
+				</li>
+			</ul>
+		</section>
+	</section>
+</article>
+<% include ../../basechips/footer.ejs %>

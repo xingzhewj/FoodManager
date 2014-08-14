@@ -185,3 +185,16 @@ exports.chat = function(req,res){
         }]
     });
 }
+/***********娱乐****************/
+exports.ent = function(req,res){
+    res.render("basehtml/ent/ent",{
+        "title":"娱乐主页",
+        "navlist":[{
+            "title": "个人网站",
+            "url": "./main"
+        },{
+            "title": "娱乐主页",
+            "url": "/ent"
+        }]
+    });
+}

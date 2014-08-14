@@ -48,6 +48,8 @@ app.get("/blog",routes.blog);
 
 app.get("/chat",routes.chat);
 
+app.get("/ent",routes.ent);
+
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
 });
