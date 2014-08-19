@@ -8,11 +8,15 @@
 	}
 	.ent-serach-wrap{
 		height: 40px;
-		width: 250px;
+		width: 300px;
 		margin: 0 auto;
 		border: 1px solid rgb(146, 191, 233);
 		position: relative;
 		border: 1px solid #e91f15;
+	}
+	.ent-search-bar{
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	.ent-serach-wrap input{
 		height: 100%;
@@ -45,14 +49,86 @@
 		float: left;
 		width: 33%;
 		list-style: none;
+		background-color: rgb(214, 240, 250);
 	}
-	.c-ent-category-film a{
+	.ent-category-list a{
 		text-decoration: none;
 		display: block;
 		margin: 10px auto 10px;
 		width: 50px;
 		font-size: 14px;
 		color:#4c4c4c;
+		text-align: center;
+		line-height: 40px;
+		background-color: red;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 17px 17px;
+		text-indent: -1000px;
+		border-radius: 10px;
+	}
+	.ent-category ul:last-child:after{
+		content:" ";
+		clear: both;
+		display: block;
+		height: 1px;
+	}
+	.c-ent-category-film a{
+		background-image: url(http://s2.apptuan.bdimg.com/static/mobile/list/home/img/dianying_04576cc0.png);
+	}
+	.c-ent-category-hotel a{
+		background-image: url(http://s2.apptuan.bdimg.com/static/mobile/list/home/img/jiudian_66d9a71d.png);
+	}
+	.c-ent-category-tour a{
+		background-image: url(http://s2.apptuan.bdimg.com/static/mobile/list/home/img/lvyou_44c980ef.png);
+	}
+	.c-ent-category-fun a{
+		background-image: url(http://s2.apptuan.bdimg.com/static/mobile/list/home/img/yule_1065919f.png);
+	}
+	.c-ent-category-left a{
+		background-image: url(http://s2.apptuan.bdimg.com/static/mobile/list/home/img/shenghuo_e5080117.png);
+	}
+	.c-ent-category-woman a{
+		background-image: url(http://s2.apptuan.bdimg.com/static/mobile/list/home/img/liren_a93424df.png);
+	}
+	.ent-good-recommend h2{
+		margin-top: 8px;
+		margin-bottom: -4px;
+		margin-left: 8px;
+		color: #333;
+		font-weight: normal;
+		font-size: 14px;
+	}
+	.w-goods{
+		border-bottom: 1px solid rgb(10, 122, 175);
+	}
+	.w-goods ul li{
+		padding-top: 5px;
+	}
+	.w-goods a{
+		display: block;
+	}
+	.w-goods a,.w-goods ins,.w-goods ul{
+		text-decoration: none;
+		list-style: none;
+	}
+	.w-goods .other span{
+		float: right;
+		margin-right: 20px;
+	}
+	.w-goods a:after{
+		content: " ";
+		display: block;
+		height: 0px;
+		overflow: hidden;
+		visibility: hidden;
+		clear: both;
+	}
+	.img-wrapper{
+		float: left;
+	}
+	.img-wrapper img{
+		height: 80px;
 	}
 </style>
 <article>
@@ -67,21 +143,127 @@
 			</form>
 		</section>
 		<section class="ent-category">
-			<ul>
+			<ul class="ent-category-list">
 				<li class="c-ent-category-film">
 					<a href="#">待定</a>
 				</li>
-				<li class="c-ent-category-item">
+				<li class="c-ent-category-hotel">
 					<a href="#">待定</a>
 				</li>
-				<li class="c-ent-category-item">
+				<li class="c-ent-category-tour">
 					<a href="#">待定</a>
 				</li>
-				<li class="c-ent-category-item">
+				<li class="c-ent-category-fun">
+					<a href="#">待定</a>
+				</li>
+				<li class="c-ent-category-left">
+					<a href="#">待定</a>
+				</li>
+				<li class="c-ent-category-woman">
 					<a href="#">待定</a>
 				</li>
 			</ul>
 		</section>
+	</section>
+	<section class="ent-good-recommend">
+		<h2>热门推荐</h2>
+		<div id="j-goods-container">
+			<section class="w-goods">
+				<a href="#">
+					<div class="img-wrapper">
+						<img src="<img src='../../images/loadImg/500b07ef1283d.jpg" alt="">
+					</div>
+					<ul class="">
+						<li class="title">
+							<span class="item-name">产品名称</span>
+						</li>
+						<li class="info">
+							<span class="site-name">产品描述</span>
+						</li>
+						<li class="other">
+							<ins>产品价格</ins>
+							<span>1999人</span>
+						</li>
+					</ul>
+				</a>
+			</section>
+			<section class="w-goods">
+				<a href="#">
+					<div class="img-wrapper">
+						<img src="<img src='../../images/loadImg/500b07ef1283d.jpg" alt="">
+					</div>
+					<ul class="">
+						<li class="title">
+							<span class="item-name">产品名称</span>
+						</li>
+						<li class="info">
+							<span class="site-name">产品描述</span>
+						</li>
+						<li class="other">
+							<ins>产品价格</ins>
+							<span>1999人</span>
+						</li>
+					</ul>
+				</a>
+			</section>
+			<section class="w-goods">
+				<a href="#">
+					<div class="img-wrapper">
+						<img src="<img src='../../images/loadImg/500b07ef1283d.jpg" alt="">
+					</div>
+					<ul class="">
+						<li class="title">
+							<span class="item-name">产品名称</span>
+						</li>
+						<li class="info">
+							<span class="site-name">产品描述</span>
+						</li>
+						<li class="other">
+							<ins>产品价格</ins>
+							<span>1999人</span>
+						</li>
+					</ul>
+				</a>
+			</section>
+			<section class="w-goods">
+				<a href="#">
+					<div class="img-wrapper">
+						<img src="<img src='../../images/loadImg/500b07ef1283d.jpg" alt="">
+					</div>
+					<ul class="">
+						<li class="title">
+							<span class="item-name">产品名称</span>
+						</li>
+						<li class="info">
+							<span class="site-name">产品描述</span>
+						</li>
+						<li class="other">
+							<ins>产品价格</ins>
+							<span>1999人</span>
+						</li>
+					</ul>
+				</a>
+			</section>
+			<section class="w-goods">
+				<a href="#">
+					<div class="img-wrapper">
+						<img src="<img src='../../images/loadImg/500b07ef1283d.jpg" alt="">
+					</div>
+					<ul class="">
+						<li class="title">
+							<span class="item-name">产品名称</span>
+						</li>
+						<li class="info">
+							<span class="site-name">产品描述</span>
+						</li>
+						<li class="other">
+							<ins>产品价格</ins>
+							<span>1999人</span>
+						</li>
+					</ul>
+				</a>
+			</section>
+		</div>
 	</section>
 </article>
 <% include ../../basechips/footer.ejs %>
