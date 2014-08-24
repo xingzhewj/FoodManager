@@ -2,6 +2,8 @@
  * GET home page.
  */
 
+var mydata = require("./mydata.js");
+
 /*-----------------------------------*/
 exports.login = function(req,res){
 	res.render("basehtml/login",{"title":"登录"});
@@ -197,4 +199,27 @@ exports.ent = function(req,res){
             "url": "/ent"
         }]
     });
+}
+
+/***************用户数据操作*******************/
+exports.validateUser = function(req, res){
+    var name = req.query.name;
+    console.dir(name);
+    mydata.user.findData(name,function(data){
+        res.send(data);
+    });
+}
+
+exports.getUserInfo = function(req, res){
+    var data = req.query;
+    mydata.user.getInfo(data,function(data){
+        res.send(data);
+    })
+}
+
+exports.insertUser = function(req, res){
+    var data = req.body;
+    mydata.user.insertData(data, function(data){
+        res.send(data);
+    })
 }

@@ -5,6 +5,7 @@
 
 var express = require('express');
 var routes = require('./routes');
+var mydata = require("./routes/mydata");
 var http = require('http');
 var path = require('path');
 var ejs = require('ejs');
@@ -49,6 +50,11 @@ app.get("/blog",routes.blog);
 app.get("/chat",routes.chat);
 
 app.get("/ent",routes.ent);
+
+/******************用户数据操作*********************/
+app.get("/validateUser", routes.validateUser);
+app.get("/getUserInfo", routes.getUserInfo);
+app.post("/insertUser", routes.insertUser);
 
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
