@@ -7,17 +7,16 @@
 		<link href="/stylesheets/flexigrid.pack.css" rel="stylesheet" media="screen">
 		<link rel="stylesheet" type="text/css" href="/stylesheets/icon.css">
 		<link rel="stylesheet" type="text/css" href="/stylesheets/default/easyui.css">
-		<script data-main="/javascripts/engin_js/main" src="/javascripts/engin_js/require.js"></script>
+		<script data-main="main" src="/javascripts/engin_js/require.js"></script>
 		<script type="text/javascript">
 			require.config({
 				baseUrl: "/javascripts/engin_js/",
 				paths:{
-					jquery: 'jquery-1.9.1.min',
-					cookie: "cookies"
+					jquery: 'jquery-1.9.1.min'
 				}
 			});
-			require(["jquery","cookie"],function($,cookie){
-				alert($().jquery);
+			require(["jquery"],function($,cookie,FDuser){
+				alert("gg");
 			});
 		</script>
 		<style type="text/css">

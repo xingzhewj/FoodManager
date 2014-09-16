@@ -5,5 +5,5 @@ require({
 	}
 });
 require(["bootstrap"],function(bootstrap){
-	alert("gg");
+	
 })

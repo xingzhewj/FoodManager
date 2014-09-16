@@ -71,7 +71,7 @@ var FDuser = (function(window,$){
 	            return unescape(document.cookie.substring(c_start, c_end))
 	        }
 	    }
-	    return ""
+	    return "";
 	}
 
 

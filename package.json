@@ -1,6 +1,6 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "FoodManger",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -8,6 +8,12 @@
   "dependencies": {
     "express": "3.4.7",
     "ejs": "*",
-    "mysql": "2.3.2"
+    "mysql": "2.3.2",
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-uglify": "~0.1.2",
+    "grunt-contrib-concat": "~0.1.1",
+    "grunt-contrib-imagemin": ">0.0.0",
+    "grunt-css": ">0.0.0"
   }
 }
